@@ -255,7 +255,7 @@ def build_html(cfg: dict, q1: dict, q2: dict, q3: dict, q4: dict, commit_hash: s
 <div class="header">
   <div class="title">Empirical Investigation of Inductive Bias, Memorisation, Autoencoding,<br>Kernel SVMs, and Clustering on CIFAR-10</div>
   <div class="authors"><b>Basab Bose</b> &nbsp;&bull;&nbsp; Roll No: <b>m26cse002</b> &nbsp;&bull;&nbsp; <code>m26cse002@iitj.ac.in</code></div>
-  <div class="meta">GitHub: {repo_url} &nbsp;|&nbsp; Final Commit: <b>{commit_hash}</b> &nbsp;|&nbsp; Seed: 26002</div>
+  <div class="meta">GitHub: <a href="{repo_url}" style="color:#1a365d;text-decoration:none;">{repo_url}</a> &nbsp;|&nbsp; Final Commit: <a href="{repo_url}/commit/{commit_hash}" style="color:#1a365d;text-decoration:none;"><b>{commit_hash}</b></a> &nbsp;|&nbsp; Seed: 26002</div>
 </div>
 
 <div class="two-col">
@@ -438,7 +438,7 @@ def build_html(cfg: dict, q1: dict, q2: dict, q3: dict, q4: dict, commit_hash: s
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--commit", default=None)
-    parser.add_argument("--repo", default="https://github.com/Basab80se/ml-assignment-3-cifar10")
+    parser.add_argument("--repo", default="https://github.com/Basab80ss/ml-assignment-3-cifar10")
     args = parser.parse_args()
 
     cfg = load_config()
