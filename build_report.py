@@ -279,6 +279,7 @@ def build_html(cfg: dict, q1: dict, q2: dict, q3: dict, q4: dict, commit_hash: s
 </ul>
 
 <table>
+  <caption style="font-size:7.8pt;text-align:left;margin-bottom:2px;"><b>Table 1:</b> Q1(a) ~1.74M-parameter MLP comparison on CIFAR-10.</caption>
   <tr><th>Model</th><th>Params</th><th>Final Train</th><th>Best Val (Ep)</th><th>Test Acc</th></tr>
   {q1a_rows}
 </table>
@@ -294,6 +295,7 @@ def build_html(cfg: dict, q1: dict, q2: dict, q3: dict, q4: dict, commit_hash: s
 <p>To construct a setting capable of fitting non-generalisable targets, we use <code>MLPMem</code> (<code>3072-768-384-192-10</code>, 2,731,210 parameters, zero dropout, zero weight decay, constant Adam <code>lr=1e-3</code>, 35 epochs) under three training label conditions while keeping the 5,000 validation set 100% clean: <b>0% noise</b>, <b>40% wrong-label noise</b> (18,000 training labels replaced uniformly by wrong classes), and <b>100% random labels</b>.</p>
 
 <table>
+  <caption style="font-size:7.8pt;text-align:left;margin-bottom:2px;"><b>Table 2:</b> Q1(b) <code>MLPMem</code> trajectory snapshots under 40% wrong-label noise.</caption>
   <tr><th>Epoch</th><th>Train Clean (60%)</th><th>Train Noisy (40%)</th><th>Clean Val Acc</th><th>Val Loss</th><th>Weight L2</th></tr>
   {q1b_snap_rows}
 </table>
@@ -315,6 +317,7 @@ def build_html(cfg: dict, q1: dict, q2: dict, q3: dict, q4: dict, commit_hash: s
 <p>Pixel permutation destroys both <i>local 3&times;3 edge/texture structure</i> and <i>global object geometry</i>. To distinguish which drives <code>FairCNN</code>'s clean advantage, we apply a fixed permutation of the 16 non-overlapping <b>8&times;8 patches</b> (seed <code>26003</code>) identically to train, val, and test. Every 8&times;8 local neighbourhood remains intact, while global object layout is scrambled.</p>
 
 <table>
+  <caption style="font-size:7.8pt;text-align:left;margin-bottom:2px;"><b>Table 3:</b> Q2 parameter-matched CNN vs. MLP across clean, pixel-permuted, and 8&times;8 patch-permuted test sets.</caption>
   <tr><th>Condition</th><th>Model</th><th>Params</th><th>Best Val</th><th>Test Acc</th><th>Conf (Corr/Wrong)</th><th>ECE</th></tr>
   {q2_rows}
 </table>
@@ -337,6 +340,7 @@ def build_html(cfg: dict, q1: dict, q2: dict, q3: dict, q4: dict, commit_hash: s
 <p>We train three symmetric convolutional autoencoders (<code>3&rarr;32&rarr;64&rarr;128</code> stride-2 encoder, linear bottleneck <code>z &isin; &#123;16, 64, 256&#125;</code>, mirrored transposed-conv decoder with Sigmoid output on <code>[0,1]</code> images) for 15 epochs (AdamW <code>lr=1.5e-3</code>, <code>wd=1e-4</code>, batch 256, MSE loss). If reconstruction error is the sole criterion, we select <b>AE-256</b> via lowest validation MSE (<b>0.00432</b>, PSNR <b>23.64 dB</b>), yielding official test MSE <b>0.00430</b> (<b>23.67 dB</b>).</p>
 
 <table>
+  <caption style="font-size:7.8pt;text-align:left;margin-bottom:2px;"><b>Table 4:</b> Q3(a) clean convolutional autoencoder capacity sweep (* selected on val MSE).</caption>
   <tr><th>Model</th><th>Params</th><th>Val MSE</th><th>Val PSNR</th><th>Test MSE (PSNR)</th></tr>
   {q3a_rows}
 </table>
@@ -361,6 +365,7 @@ def build_html(cfg: dict, q1: dict, q2: dict, q3: dict, q4: dict, commit_hash: s
 <p>Freezing all four encoders (without fine-tuning), we extract latent codes and fit standardized <code>LogisticRegression</code> linear probes (tuning <code>C &isin; &#123;0.01..100&#125;</code> on validation only).</p>
 
 <table>
+  <caption style="font-size:7.8pt;text-align:left;margin-bottom:2px;"><b>Table 5:</b> Q3(c) frozen encoder linear-probe classification vs. test reconstruction quality.</caption>
   <tr><th>Encoder</th><th>Test MSE</th><th>Test PSNR</th><th>Best C</th><th>Val Acc</th><th>Test Probe</th></tr>
   {q3c_rows}
 </table>
@@ -378,6 +383,7 @@ def build_html(cfg: dict, q1: dict, q2: dict, q3: dict, q4: dict, commit_hash: s
 <p>We keep the frozen unsupervised 256-d clean-image representation from Q3(b)'s <b>DAE-256</b> unchanged. Following the Q4 note, we draw one fixed stratified training subset of <b>5,000 samples</b> (500/class, seed <code>26002</code>, saved in <code>splits/q4_svm_subset_26002.npz</code>) prior to any model selection, standardize features on this subset, and sweep 6 values of <code>C</code> spanning 3.3 orders of magnitude (<code>0.005</code> to <code>10.0</code>) across <code>linear</code>, <code>rbf</code>, and <code>poly</code> (degree 3) kernels on the full 5,000 validation set.</p>
 
 <table>
+  <caption style="font-size:7.8pt;text-align:left;margin-bottom:2px;"><b>Table 6:</b> Q4(a) SVM C and kernel sweep on 5,000-sample DAE-256 subset (* selected on val: 48.44% &rarr; 48.03% test).</caption>
   <tr><th rowspan="2">C</th><th colspan="3">Linear</th><th colspan="3">RBF</th><th colspan="3">Poly (d=3)</th></tr>
   <tr><th>Tr</th><th>Val</th><th>SV</th><th>Tr</th><th>Val</th><th>SV</th><th>Tr</th><th>Val</th><th>SV</th></tr>
   {q4a_rows}
@@ -402,6 +408,7 @@ def build_html(cfg: dict, q1: dict, q2: dict, q3: dict, q4: dict, commit_hash: s
 <p>Clustering the exact same standardized DAE-256 representations without labels, we evaluate <code>KMeans</code> and diagonal <code>GMM</code> across <code>k &isin; &#123;5, 8, 10, 12, 15, 20&#125;</code> on training and validation sets using unsupervised Silhouette and Davies-Bouldin scores. Silhouette clearly prefers <b>KMeans with k=5</b> (Val Sil <b>0.0321</b>, Train Sil <b>0.0309</b> vs. negative Silhouette for k&ge;10 and all GMMs). Fitting on the 45,000 training representations and assigning test clusters without labels yields: <b>Test ARI = 0.0271</b>, <b>Test NMI = 0.0602</b>, <b>Purity = 0.1697</b> (and for a 10-cluster KMeans reference: <b>ARI = 0.0478</b>, <b>NMI = 0.0920</b>, <b>Purity = 0.2377</b>).</p>
 
 <table>
+  <caption style="font-size:7.8pt;text-align:left;margin-bottom:2px;"><b>Table 7:</b> Q4(c) KMeans (k=5) test cluster-to-class contingency table (ARI=0.0271, NMI=0.0602).</caption>
   <tr><th>Clus</th><th>Air</th><th>Auto</th><th>Bird</th><th>Cat</th><th>Deer</th><th>Dog</th><th>Frog</th><th>Hors</th><th>Ship</th><th>Trk</th><th>Tot</th></tr>
   {cont_rows}
 </table>
