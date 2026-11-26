@@ -1,0 +1,1222 @@
+{
+  "q4a": {
+    "sweep": [
+      {
+        "kernel": "linear",
+        "C": 0.005,
+        "train_acc": 0.4892,
+        "val_acc": 0.4036,
+        "sv_count": 4679,
+        "sv_fraction": 0.9358,
+        "fit_seconds": 13.35
+      },
+      {
+        "kernel": "linear",
+        "C": 0.02,
+        "train_acc": 0.5436,
+        "val_acc": 0.4114,
+        "sv_count": 4537,
+        "sv_fraction": 0.9074,
+        "fit_seconds": 12.91
+      },
+      {
+        "kernel": "linear",
+        "C": 0.1,
+        "train_acc": 0.5906,
+        "val_acc": 0.4148,
+        "sv_count": 4424,
+        "sv_fraction": 0.8848,
+        "fit_seconds": 15.07
+      },
+      {
+        "kernel": "linear",
+        "C": 0.5,
+        "train_acc": 0.6592,
+        "val_acc": 0.421,
+        "sv_count": 4327,
+        "sv_fraction": 0.8654,
+        "fit_seconds": 28.88
+      },
+      {
+        "kernel": "linear",
+        "C": 2.0,
+        "train_acc": 0.7188,
+        "val_acc": 0.4178,
+        "sv_count": 4253,
+        "sv_fraction": 0.8506,
+        "fit_seconds": 57.11
+      },
+      {
+        "kernel": "linear",
+        "C": 10.0,
+        "train_acc": 0.7702,
+        "val_acc": 0.4038,
+        "sv_count": 4195,
+        "sv_fraction": 0.839,
+        "fit_seconds": 232.08
+      },
+      {
+        "kernel": "rbf",
+        "C": 0.005,
+        "train_acc": 0.3138,
+        "val_acc": 0.2926,
+        "sv_count": 5000,
+        "sv_fraction": 1.0,
+        "fit_seconds": 25.15
+      },
+      {
+        "kernel": "rbf",
+        "C": 0.02,
+        "train_acc": 0.315,
+        "val_acc": 0.2926,
+        "sv_count": 5000,
+        "sv_fraction": 1.0,
+        "fit_seconds": 27.87
+      },
+      {
+        "kernel": "rbf",
+        "C": 0.1,
+        "train_acc": 0.4018,
+        "val_acc": 0.3556,
+        "sv_count": 4970,
+        "sv_fraction": 0.994,
+        "fit_seconds": 22.65
+      },
+      {
+        "kernel": "rbf",
+        "C": 0.5,
+        "train_acc": 0.622,
+        "val_acc": 0.439,
+        "sv_count": 4860,
+        "sv_fraction": 0.972,
+        "fit_seconds": 21.92
+      },
+      {
+        "kernel": "rbf",
+        "C": 2.0,
+        "train_acc": 0.8624,
+        "val_acc": 0.4844,
+        "sv_count": 4822,
+        "sv_fraction": 0.9644,
+        "fit_seconds": 22.61
+      },
+      {
+        "kernel": "rbf",
+        "C": 10.0,
+        "train_acc": 0.9754,
+        "val_acc": 0.4744,
+        "sv_count": 4829,
+        "sv_fraction": 0.9658,
+        "fit_seconds": 23.86
+      },
+      {
+        "kernel": "poly",
+        "C": 0.005,
+        "train_acc": 0.1364,
+        "val_acc": 0.1194,
+        "sv_count": 4998,
+        "sv_fraction": 0.9996,
+        "fit_seconds": 16.07
+      },
+      {
+        "kernel": "poly",
+        "C": 0.02,
+        "train_acc": 0.163,
+        "val_acc": 0.1344,
+        "sv_count": 4990,
+        "sv_fraction": 0.998,
+        "fit_seconds": 15.29
+      },
+      {
+        "kernel": "poly",
+        "C": 0.1,
+        "train_acc": 0.2812,
+        "val_acc": 0.1818,
+        "sv_count": 4944,
+        "sv_fraction": 0.9888,
+        "fit_seconds": 14.65
+      },
+      {
+        "kernel": "poly",
+        "C": 0.5,
+        "train_acc": 0.5172,
+        "val_acc": 0.2548,
+        "sv_count": 4884,
+        "sv_fraction": 0.9768,
+        "fit_seconds": 14.13
+      },
+      {
+        "kernel": "poly",
+        "C": 2.0,
+        "train_acc": 0.7464,
+        "val_acc": 0.3262,
+        "sv_count": 4798,
+        "sv_fraction": 0.9596,
+        "fit_seconds": 13.01
+      },
+      {
+        "kernel": "poly",
+        "C": 10.0,
+        "train_acc": 0.9184,
+        "val_acc": 0.374,
+        "sv_count": 4745,
+        "sv_fraction": 0.949,
+        "fit_seconds": 8.06
+      }
+    ],
+    "selected": {
+      "kernel": "rbf",
+      "C": 2.0
+    },
+    "selected_val_acc": 0.4844,
+    "test_acc": 0.4803,
+    "test_per_class_acc": {
+      "airplane": 0.562,
+      "automobile": 0.599,
+      "bird": 0.312,
+      "cat": 0.322,
+      "deer": 0.445,
+      "dog": 0.407,
+      "frog": 0.552,
+      "horse": 0.477,
+      "ship": 0.599,
+      "truck": 0.528
+    },
+    "test_confusion_matrix": [
+      [
+        562,
+        39,
+        61,
+        32,
+        40,
+        17,
+        16,
+        35,
+        148,
+        50
+      ],
+      [
+        55,
+        599,
+        22,
+        31,
+        14,
+        21,
+        22,
+        26,
+        51,
+        159
+      ],
+      [
+        100,
+        27,
+        312,
+        95,
+        197,
+        77,
+        93,
+        46,
+        25,
+        28
+      ],
+      [
+        32,
+        30,
+        90,
+        322,
+        73,
+        193,
+        126,
+        52,
+        14,
+        68
+      ],
+      [
+        49,
+        25,
+        164,
+        64,
+        445,
+        49,
+        107,
+        68,
+        14,
+        15
+      ],
+      [
+        24,
+        17,
+        100,
+        179,
+        78,
+        407,
+        82,
+        72,
+        17,
+        24
+      ],
+      [
+        7,
+        31,
+        78,
+        95,
+        151,
+        45,
+        552,
+        13,
+        6,
+        22
+      ],
+      [
+        48,
+        25,
+        60,
+        82,
+        110,
+        80,
+        30,
+        477,
+        7,
+        81
+      ],
+      [
+        119,
+        76,
+        14,
+        25,
+        26,
+        29,
+        13,
+        19,
+        599,
+        80
+      ],
+      [
+        58,
+        186,
+        18,
+        35,
+        18,
+        25,
+        25,
+        41,
+        66,
+        528
+      ]
+    ]
+  },
+  "q4b": {
+    "difficult_pairs": [
+      {
+        "pair": "cat_vs_dog",
+        "class_i": "cat",
+        "class_j": "dog",
+        "mutual_test_errors": 372,
+        "err_i_to_j": 193,
+        "err_j_to_i": 179,
+        "centroid_dist": 1.9514347314834595,
+        "spread_i": 15.587353706359863,
+        "spread_j": 15.667830467224121,
+        "support_vectors": [
+          {
+            "subset_index": 2994,
+            "train_index": 26629,
+            "true_label": "dog",
+            "ovo_score": -0.004835555687048881
+          },
+          {
+            "subset_index": 3459,
+            "train_index": 30949,
+            "true_label": "dog",
+            "ovo_score": -0.005987378848447272
+          },
+          {
+            "subset_index": 213,
+            "train_index": 1820,
+            "true_label": "cat",
+            "ovo_score": 0.00880012787710191
+          },
+          {
+            "subset_index": 1710,
+            "train_index": 15381,
+            "true_label": "cat",
+            "ovo_score": 0.010661028551686297
+          },
+          {
+            "subset_index": 3885,
+            "train_index": 35467,
+            "true_label": "cat",
+            "ovo_score": -0.011414573923168053
+          },
+          {
+            "subset_index": 23,
+            "train_index": 198,
+            "true_label": "dog",
+            "ovo_score": -0.01565172882499835
+          }
+        ],
+        "near_boundary_test": [
+          {
+            "test_index": 6942,
+            "true_label": "cat",
+            "pred_label": "dog",
+            "ovo_score": -0.00022961065424111082,
+            "correct": false
+          },
+          {
+            "test_index": 5529,
+            "true_label": "cat",
+            "pred_label": "ship",
+            "ovo_score": -0.0007157913394607307,
+            "correct": false
+          },
+          {
+            "test_index": 3353,
+            "true_label": "cat",
+            "pred_label": "frog",
+            "ovo_score": -0.0007258095532499953,
+            "correct": false
+          },
+          {
+            "test_index": 3376,
+            "true_label": "dog",
+            "pred_label": "cat",
+            "ovo_score": 0.0009946606524381119,
+            "correct": false
+          },
+          {
+            "test_index": 8668,
+            "true_label": "cat",
+            "pred_label": "cat",
+            "ovo_score": 0.0013792028681379465,
+            "correct": true
+          },
+          {
+            "test_index": 1588,
+            "true_label": "dog",
+            "pred_label": "deer",
+            "ovo_score": -0.0016791713450584334,
+            "correct": false
+          }
+        ]
+      },
+      {
+        "pair": "bird_vs_deer",
+        "class_i": "bird",
+        "class_j": "deer",
+        "mutual_test_errors": 361,
+        "err_i_to_j": 197,
+        "err_j_to_i": 164,
+        "centroid_dist": 1.958688735961914,
+        "spread_i": 12.762660026550293,
+        "spread_j": 11.532333374023438,
+        "support_vectors": [
+          {
+            "subset_index": 2806,
+            "train_index": 25162,
+            "true_label": "deer",
+            "ovo_score": 0.0007055212810181954
+          },
+          {
+            "subset_index": 3131,
+            "train_index": 27959,
+            "true_label": "bird",
+            "ovo_score": 0.0013005072490345215
+          },
+          {
+            "subset_index": 1674,
+            "train_index": 15036,
+            "true_label": "bird",
+            "ovo_score": 0.001818134986509845
+          },
+          {
+            "subset_index": 4782,
+            "train_index": 43039,
+            "true_label": "deer",
+            "ovo_score": 0.002455541114989246
+          },
+          {
+            "subset_index": 4783,
+            "train_index": 43043,
+            "true_label": "bird",
+            "ovo_score": 0.0029356723968285703
+          },
+          {
+            "subset_index": 173,
+            "train_index": 1490,
+            "true_label": "deer",
+            "ovo_score": -0.0029979484196240858
+          }
+        ],
+        "near_boundary_test": [
+          {
+            "test_index": 2191,
+            "true_label": "deer",
+            "pred_label": "cat",
+            "ovo_score": -0.00023257953221400562,
+            "correct": false
+          },
+          {
+            "test_index": 3783,
+            "true_label": "bird",
+            "pred_label": "bird",
+            "ovo_score": 0.0014228089722695403,
+            "correct": true
+          },
+          {
+            "test_index": 835,
+            "true_label": "deer",
+            "pred_label": "cat",
+            "ovo_score": 0.001737360948363631,
+            "correct": false
+          },
+          {
+            "test_index": 3675,
+            "true_label": "deer",
+            "pred_label": "horse",
+            "ovo_score": -0.001935162732256246,
+            "correct": false
+          },
+          {
+            "test_index": 6606,
+            "true_label": "deer",
+            "pred_label": "truck",
+            "ovo_score": 0.0025047481873754496,
+            "correct": false
+          },
+          {
+            "test_index": 5760,
+            "true_label": "bird",
+            "pred_label": "bird",
+            "ovo_score": 0.0025536715282759026,
+            "correct": true
+          }
+        ]
+      },
+      {
+        "pair": "automobile_vs_truck",
+        "class_i": "automobile",
+        "class_j": "truck",
+        "mutual_test_errors": 345,
+        "err_i_to_j": 159,
+        "err_j_to_i": 186,
+        "centroid_dist": 3.9567341804504395,
+        "spread_i": 17.120895385742188,
+        "spread_j": 17.069686889648438,
+        "support_vectors": [
+          {
+            "subset_index": 3583,
+            "train_index": 32142,
+            "true_label": "truck",
+            "ovo_score": 0.022529346957313214
+          },
+          {
+            "subset_index": 4848,
+            "train_index": 43740,
+            "true_label": "truck",
+            "ovo_score": -0.029917353786124805
+          },
+          {
+            "subset_index": 558,
+            "train_index": 4974,
+            "true_label": "automobile",
+            "ovo_score": 0.044132938057672315
+          },
+          {
+            "subset_index": 3225,
+            "train_index": 28816,
+            "true_label": "truck",
+            "ovo_score": -0.04888183743132364
+          },
+          {
+            "subset_index": 2841,
+            "train_index": 25405,
+            "true_label": "automobile",
+            "ovo_score": 0.04904406208248959
+          },
+          {
+            "subset_index": 3713,
+            "train_index": 33434,
+            "true_label": "truck",
+            "ovo_score": 0.05135339477111877
+          }
+        ],
+        "near_boundary_test": [
+          {
+            "test_index": 5572,
+            "true_label": "automobile",
+            "pred_label": "automobile",
+            "ovo_score": 4.8909540809452534e-05,
+            "correct": true
+          },
+          {
+            "test_index": 6290,
+            "true_label": "truck",
+            "pred_label": "automobile",
+            "ovo_score": 0.00019899513740927882,
+            "correct": false
+          },
+          {
+            "test_index": 5596,
+            "true_label": "truck",
+            "pred_label": "truck",
+            "ovo_score": -0.0012920816007015931,
+            "correct": true
+          },
+          {
+            "test_index": 6301,
+            "true_label": "automobile",
+            "pred_label": "automobile",
+            "ovo_score": 0.0018674672682335025,
+            "correct": true
+          },
+          {
+            "test_index": 6472,
+            "true_label": "automobile",
+            "pred_label": "airplane",
+            "ovo_score": 0.0019370506498447779,
+            "correct": false
+          },
+          {
+            "test_index": 9662,
+            "true_label": "automobile",
+            "pred_label": "truck",
+            "ovo_score": -0.0019667711144501013,
+            "correct": false
+          }
+        ]
+      },
+      {
+        "pair": "airplane_vs_ship",
+        "class_i": "airplane",
+        "class_j": "ship",
+        "mutual_test_errors": 267,
+        "err_i_to_j": 148,
+        "err_j_to_i": 119,
+        "centroid_dist": 3.592564344406128,
+        "spread_i": 15.381027221679688,
+        "spread_j": 14.519576072692871,
+        "support_vectors": [
+          {
+            "subset_index": 2979,
+            "train_index": 26502,
+            "true_label": "ship",
+            "ovo_score": 0.003908550328678526
+          },
+          {
+            "subset_index": 2051,
+            "train_index": 18423,
+            "true_label": "airplane",
+            "ovo_score": -0.007694537879297428
+          },
+          {
+            "subset_index": 2486,
+            "train_index": 22400,
+            "true_label": "ship",
+            "ovo_score": -0.013344102203978539
+          },
+          {
+            "subset_index": 3716,
+            "train_index": 33454,
+            "true_label": "airplane",
+            "ovo_score": 0.013577073452852959
+          },
+          {
+            "subset_index": 3781,
+            "train_index": 34215,
+            "true_label": "airplane",
+            "ovo_score": 0.02102018270582183
+          },
+          {
+            "subset_index": 2987,
+            "train_index": 26575,
+            "true_label": "ship",
+            "ovo_score": 0.023444664119948597
+          }
+        ],
+        "near_boundary_test": [
+          {
+            "test_index": 7655,
+            "true_label": "ship",
+            "pred_label": "airplane",
+            "ovo_score": 0.0009616617398710975,
+            "correct": false
+          },
+          {
+            "test_index": 6491,
+            "true_label": "airplane",
+            "pred_label": "dog",
+            "ovo_score": 0.001909564427620511,
+            "correct": false
+          },
+          {
+            "test_index": 8895,
+            "true_label": "airplane",
+            "pred_label": "cat",
+            "ovo_score": 0.001935825381034581,
+            "correct": false
+          },
+          {
+            "test_index": 615,
+            "true_label": "ship",
+            "pred_label": "cat",
+            "ovo_score": 0.0022945215693166293,
+            "correct": false
+          },
+          {
+            "test_index": 3761,
+            "true_label": "airplane",
+            "pred_label": "airplane",
+            "ovo_score": 0.0027663301119036227,
+            "correct": true
+          },
+          {
+            "test_index": 9484,
+            "true_label": "airplane",
+            "pred_label": "bird",
+            "ovo_score": -0.0035807961067283595,
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  "q4c": {
+    "model_selection": [
+      {
+        "method": "kmeans",
+        "k": 5,
+        "train_silhouette": 0.03090878203511238,
+        "val_silhouette": 0.032093681395053864,
+        "val_davies_bouldin": 3.3235676277624515
+      },
+      {
+        "method": "kmeans",
+        "k": 8,
+        "train_silhouette": 0.02282223291695118,
+        "val_silhouette": 0.02321157604455948,
+        "val_davies_bouldin": 3.227069132427753
+      },
+      {
+        "method": "kmeans",
+        "k": 10,
+        "train_silhouette": -0.0073380540125072,
+        "val_silhouette": -0.005720019340515137,
+        "val_davies_bouldin": 3.3022474011203107
+      },
+      {
+        "method": "kmeans",
+        "k": 12,
+        "train_silhouette": -0.01377051416784525,
+        "val_silhouette": -0.013750458136200905,
+        "val_davies_bouldin": 3.3517120777656326
+      },
+      {
+        "method": "kmeans",
+        "k": 15,
+        "train_silhouette": -0.016745761036872864,
+        "val_silhouette": -0.018185598775744438,
+        "val_davies_bouldin": 3.1752924233133126
+      },
+      {
+        "method": "kmeans",
+        "k": 20,
+        "train_silhouette": -0.020125338807702065,
+        "val_silhouette": -0.021315744146704674,
+        "val_davies_bouldin": 3.217825234417596
+      },
+      {
+        "method": "gmm_diag",
+        "k": 5,
+        "train_silhouette": -0.06389844417572021,
+        "val_silhouette": -0.06688527762889862,
+        "val_davies_bouldin": 4.339908778761614
+      },
+      {
+        "method": "gmm_diag",
+        "k": 8,
+        "train_silhouette": -0.08681449294090271,
+        "val_silhouette": -0.08780508488416672,
+        "val_davies_bouldin": 4.129652887763328
+      },
+      {
+        "method": "gmm_diag",
+        "k": 10,
+        "train_silhouette": -0.09528065472841263,
+        "val_silhouette": -0.09681994467973709,
+        "val_davies_bouldin": 4.128553571239413
+      },
+      {
+        "method": "gmm_diag",
+        "k": 12,
+        "train_silhouette": -0.09766814857721329,
+        "val_silhouette": -0.0981963500380516,
+        "val_davies_bouldin": 4.216416473928716
+      },
+      {
+        "method": "gmm_diag",
+        "k": 15,
+        "train_silhouette": -0.10433684289455414,
+        "val_silhouette": -0.10606200993061066,
+        "val_davies_bouldin": 4.3572570430049655
+      },
+      {
+        "method": "gmm_diag",
+        "k": 20,
+        "train_silhouette": -0.10050682723522186,
+        "val_silhouette": -0.10238389670848846,
+        "val_davies_bouldin": 4.189551668391468
+      }
+    ],
+    "selected": {
+      "method": "kmeans",
+      "k": 5
+    },
+    "selected_test_eval": {
+      "method": "kmeans",
+      "k": 5,
+      "test_ari": 0.0270737975260271,
+      "test_nmi": 0.06017067517309985,
+      "cluster_purity": 0.1697,
+      "contingency_table": [
+        [
+          54,
+          208,
+          138,
+          248,
+          166,
+          250,
+          260,
+          134,
+          79,
+          55
+        ],
+        [
+          183,
+          383,
+          413,
+          347,
+          467,
+          287,
+          466,
+          368,
+          245,
+          346
+        ],
+        [
+          148,
+          101,
+          53,
+          66,
+          10,
+          37,
+          63,
+          49,
+          26,
+          96
+        ],
+        [
+          428,
+          139,
+          341,
+          280,
+          305,
+          381,
+          189,
+          264,
+          268,
+          109
+        ],
+        [
+          187,
+          169,
+          55,
+          59,
+          52,
+          45,
+          22,
+          185,
+          382,
+          394
+        ]
+      ],
+      "per_class_summary": {
+        "airplane": {
+          "dominant_cluster": 3,
+          "dominant_fraction": 0.428,
+          "cluster_entropy_bits": 2.0600310568475164,
+          "svm_test_acc": 0.562
+        },
+        "automobile": {
+          "dominant_cluster": 1,
+          "dominant_fraction": 0.383,
+          "cluster_entropy_bits": 2.1647322068132935,
+          "svm_test_acc": 0.599
+        },
+        "bird": {
+          "dominant_cluster": 1,
+          "dominant_fraction": 0.413,
+          "cluster_entropy_bits": 1.9052370552975204,
+          "svm_test_acc": 0.312
+        },
+        "cat": {
+          "dominant_cluster": 1,
+          "dominant_fraction": 0.347,
+          "cluster_entropy_bits": 2.0426776303068883,
+          "svm_test_acc": 0.322
+        },
+        "deer": {
+          "dominant_cluster": 1,
+          "dominant_fraction": 0.467,
+          "cluster_entropy_bits": 1.753803464424549,
+          "svm_test_acc": 0.445
+        },
+        "dog": {
+          "dominant_cluster": 3,
+          "dominant_fraction": 0.381,
+          "cluster_entropy_bits": 1.9245671832425806,
+          "svm_test_acc": 0.407
+        },
+        "frog": {
+          "dominant_cluster": 1,
+          "dominant_fraction": 0.466,
+          "cluster_entropy_bits": 1.8453179608974966,
+          "svm_test_acc": 0.552
+        },
+        "horse": {
+          "dominant_cluster": 1,
+          "dominant_fraction": 0.368,
+          "cluster_entropy_bits": 2.0901111332439704,
+          "svm_test_acc": 0.477
+        },
+        "ship": {
+          "dominant_cluster": 4,
+          "dominant_fraction": 0.382,
+          "cluster_entropy_bits": 1.9628081624764588,
+          "svm_test_acc": 0.599
+        },
+        "truck": {
+          "dominant_cluster": 4,
+          "dominant_fraction": 0.394,
+          "cluster_entropy_bits": 1.962451225320196,
+          "svm_test_acc": 0.528
+        }
+      },
+      "top_cluster_overlaps": [
+        {
+          "pair": "bird_vs_deer",
+          "cluster_distribution_overlap": 0.9179999999999999,
+          "svm_pairwise_error_rate": 0.1805,
+          "svm_pairwise_accuracy": 0.8195
+        },
+        {
+          "pair": "cat_vs_dog",
+          "cluster_distribution_overlap": 0.897,
+          "svm_pairwise_error_rate": 0.186,
+          "svm_pairwise_accuracy": 0.8140000000000001
+        },
+        {
+          "pair": "bird_vs_cat",
+          "cluster_distribution_overlap": 0.8730000000000001,
+          "svm_pairwise_error_rate": 0.0925,
+          "svm_pairwise_accuracy": 0.9075
+        },
+        {
+          "pair": "bird_vs_horse",
+          "cluster_distribution_overlap": 0.8700000000000001,
+          "svm_pairwise_error_rate": 0.053,
+          "svm_pairwise_accuracy": 0.947
+        },
+        {
+          "pair": "cat_vs_frog",
+          "cluster_distribution_overlap": 0.869,
+          "svm_pairwise_error_rate": 0.1105,
+          "svm_pairwise_accuracy": 0.8895
+        },
+        {
+          "pair": "automobile_vs_horse",
+          "cluster_distribution_overlap": 0.8590000000000001,
+          "svm_pairwise_error_rate": 0.0255,
+          "svm_pairwise_accuracy": 0.9745
+        },
+        {
+          "pair": "cat_vs_deer",
+          "cluster_distribution_overlap": 0.8550000000000001,
+          "svm_pairwise_error_rate": 0.0685,
+          "svm_pairwise_accuracy": 0.9315
+        },
+        {
+          "pair": "cat_vs_horse",
+          "cluster_distribution_overlap": 0.853,
+          "svm_pairwise_error_rate": 0.067,
+          "svm_pairwise_accuracy": 0.933
+        },
+        {
+          "pair": "deer_vs_frog",
+          "cluster_distribution_overlap": 0.853,
+          "svm_pairwise_error_rate": 0.129,
+          "svm_pairwise_accuracy": 0.871
+        },
+        {
+          "pair": "bird_vs_dog",
+          "cluster_distribution_overlap": 0.848,
+          "svm_pairwise_error_rate": 0.0885,
+          "svm_pairwise_accuracy": 0.9115
+        }
+      ]
+    },
+    "reference_kmeans_10_eval": {
+      "method": "kmeans",
+      "k": 10,
+      "test_ari": 0.04779190191745083,
+      "test_nmi": 0.09200868411929186,
+      "cluster_purity": 0.2377,
+      "contingency_table": [
+        [
+          166,
+          157,
+          53,
+          37,
+          47,
+          38,
+          23,
+          71,
+          406,
+          190
+        ],
+        [
+          40,
+          78,
+          23,
+          44,
+          30,
+          35,
+          21,
+          199,
+          75,
+          274
+        ],
+        [
+          153,
+          125,
+          379,
+          199,
+          352,
+          210,
+          295,
+          211,
+          91,
+          79
+        ],
+        [
+          286,
+          21,
+          128,
+          72,
+          50,
+          61,
+          24,
+          40,
+          65,
+          28
+        ],
+        [
+          82,
+          71,
+          20,
+          13,
+          7,
+          10,
+          4,
+          38,
+          133,
+          105
+        ],
+        [
+          60,
+          122,
+          55,
+          152,
+          70,
+          268,
+          104,
+          111,
+          116,
+          52
+        ],
+        [
+          81,
+          78,
+          34,
+          47,
+          5,
+          26,
+          59,
+          30,
+          12,
+          66
+        ],
+        [
+          73,
+          198,
+          194,
+          182,
+          248,
+          140,
+          266,
+          124,
+          42,
+          131
+        ],
+        [
+          45,
+          77,
+          55,
+          155,
+          121,
+          135,
+          75,
+          127,
+          33,
+          60
+        ],
+        [
+          14,
+          73,
+          59,
+          99,
+          70,
+          77,
+          129,
+          49,
+          27,
+          15
+        ]
+      ],
+      "per_class_summary": {
+        "airplane": {
+          "dominant_cluster": 3,
+          "dominant_fraction": 0.286,
+          "cluster_entropy_bits": 2.9429929716216767,
+          "svm_test_acc": 0.562
+        },
+        "automobile": {
+          "dominant_cluster": 7,
+          "dominant_fraction": 0.198,
+          "cluster_entropy_bits": 3.1498500116074606,
+          "svm_test_acc": 0.599
+        },
+        "bird": {
+          "dominant_cluster": 2,
+          "dominant_fraction": 0.379,
+          "cluster_entropy_bits": 2.6988071968294594,
+          "svm_test_acc": 0.312
+        },
+        "cat": {
+          "dominant_cluster": 2,
+          "dominant_fraction": 0.199,
+          "cluster_entropy_bits": 3.0075160321920826,
+          "svm_test_acc": 0.322
+        },
+        "deer": {
+          "dominant_cluster": 2,
+          "dominant_fraction": 0.352,
+          "cluster_entropy_bits": 2.5984152675286114,
+          "svm_test_acc": 0.445
+        },
+        "dog": {
+          "dominant_cluster": 5,
+          "dominant_fraction": 0.268,
+          "cluster_entropy_bits": 2.8519166889860452,
+          "svm_test_acc": 0.407
+        },
+        "frog": {
+          "dominant_cluster": 2,
+          "dominant_fraction": 0.295,
+          "cluster_entropy_bits": 2.6728795900444693,
+          "svm_test_acc": 0.552
+        },
+        "horse": {
+          "dominant_cluster": 2,
+          "dominant_fraction": 0.211,
+          "cluster_entropy_bits": 3.0416226824627017,
+          "svm_test_acc": 0.477
+        },
+        "ship": {
+          "dominant_cluster": 0,
+          "dominant_fraction": 0.406,
+          "cluster_entropy_bits": 2.698611070773722,
+          "svm_test_acc": 0.599
+        },
+        "truck": {
+          "dominant_cluster": 1,
+          "dominant_fraction": 0.274,
+          "cluster_entropy_bits": 2.9413024469764357,
+          "svm_test_acc": 0.528
+        }
+      },
+      "top_cluster_overlaps": [
+        {
+          "pair": "cat_vs_dog",
+          "cluster_distribution_overlap": 0.872,
+          "svm_pairwise_error_rate": 0.186,
+          "svm_pairwise_accuracy": 0.8140000000000001
+        },
+        {
+          "pair": "bird_vs_deer",
+          "cluster_distribution_overlap": 0.847,
+          "svm_pairwise_error_rate": 0.1805,
+          "svm_pairwise_accuracy": 0.8195
+        },
+        {
+          "pair": "deer_vs_frog",
+          "cluster_distribution_overlap": 0.835,
+          "svm_pairwise_error_rate": 0.129,
+          "svm_pairwise_accuracy": 0.871
+        },
+        {
+          "pair": "cat_vs_frog",
+          "cluster_distribution_overlap": 0.7779999999999999,
+          "svm_pairwise_error_rate": 0.1105,
+          "svm_pairwise_accuracy": 0.8895
+        },
+        {
+          "pair": "cat_vs_horse",
+          "cluster_distribution_overlap": 0.7740000000000001,
+          "svm_pairwise_error_rate": 0.067,
+          "svm_pairwise_accuracy": 0.933
+        },
+        {
+          "pair": "cat_vs_deer",
+          "cluster_distribution_overlap": 0.7710000000000001,
+          "svm_pairwise_error_rate": 0.0685,
+          "svm_pairwise_accuracy": 0.9315
+        },
+        {
+          "pair": "dog_vs_horse",
+          "cluster_distribution_overlap": 0.7700000000000001,
+          "svm_pairwise_error_rate": 0.076,
+          "svm_pairwise_accuracy": 0.924
+        },
+        {
+          "pair": "bird_vs_frog",
+          "cluster_distribution_overlap": 0.764,
+          "svm_pairwise_error_rate": 0.0855,
+          "svm_pairwise_accuracy": 0.9145
+        },
+        {
+          "pair": "deer_vs_dog",
+          "cluster_distribution_overlap": 0.7410000000000001,
+          "svm_pairwise_error_rate": 0.0635,
+          "svm_pairwise_accuracy": 0.9365
+        },
+        {
+          "pair": "automobile_vs_cat",
+          "cluster_distribution_overlap": 0.7409999999999999,
+          "svm_pairwise_error_rate": 0.0305,
+          "svm_pairwise_accuracy": 0.9695
+        }
+      ]
+    }
+  }
+}

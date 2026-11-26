@@ -1,0 +1,52 @@
+{
+  "student": {
+    "name": "Basab Bose",
+    "roll_number": "m26cse002",
+    "email": "m26cse002@iitj.ac.in",
+    "seed": 26002
+  },
+  "data": {
+    "root": "data",
+    "split_file": "splits/cifar10_split_26002.npz",
+    "q4_subset_file": "splits/q4_svm_subset_26002.npz",
+    "train_size": 45000,
+    "val_size": 5000,
+    "test_size": 10000,
+    "num_classes": 10
+  },
+  "q1": {
+    "batch_size": 128,
+    "epochs_a": 25,
+    "lr_a": 0.001,
+    "weight_decay_plain": 0.0001,
+    "weight_decay_reg": 0.01,
+    "dropout_reg": 0.35,
+    "epochs_b": 35,
+    "lr_b": 0.001,
+    "noise_rate_b": 0.40
+  },
+  "q2": {
+    "batch_size": 256,
+    "epochs": 20,
+    "lr": 0.0015,
+    "weight_decay": 0.0001,
+    "patch_size": 8
+  },
+  "q3": {
+    "batch_size": 256,
+    "epochs": 15,
+    "lr": 0.0015,
+    "weight_decay": 0.0001,
+    "bottlenecks": [16, 64, 256],
+    "noise_std": 0.25,
+    "probe_C_grid": [0.01, 0.1, 1.0, 10.0, 100.0]
+  },
+  "q4": {
+    "subset_size": 5000,
+    "representation": "q3_dae_256",
+    "C_grid": [0.005, 0.02, 0.1, 0.5, 2.0, 10.0],
+    "kernels": ["linear", "rbf", "poly"],
+    "poly_degree": 3,
+    "cluster_k_grid": [5, 8, 10, 12, 15, 20]
+  }
+}
